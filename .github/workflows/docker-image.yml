@@ -37,6 +37,6 @@ jobs:
     - name: Push Docker image
       run: |
           COMMIT_ID=$(git rev-parse --short=6 HEAD)
-          # IMAGE_TAG="razoropsrepocode/insure:V-${COMMIT_ID}"
+          # IMAGE_TAG="razoropsrepocode/coffe:V-${COMMIT_ID}"
           # docker push "$IMAGE_TAG"
-          docker push razoropsrepocode/insure:V-$COMMIT_ID
+          docker push razoropsrepocode/coffe:V-$COMMIT_ID
